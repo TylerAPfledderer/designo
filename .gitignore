@@ -30,3 +30,6 @@ logs
 ## Panda
 styled-system
 styled-system-studio
+
+# Figma
+*.fig
