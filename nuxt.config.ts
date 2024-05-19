@@ -1,4 +1,5 @@
 import { createResolver } from '@nuxt/kit'
+
 const { resolve } = createResolver(import.meta.url)
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -6,27 +7,27 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   typescript: {
-    typeCheck: true
+    typeCheck: true,
   },
 
-  modules: ["@nuxt/eslint", "@nuxtjs/storybook"],
+  modules: ['@nuxt/eslint', '@nuxtjs/storybook'],
 
   eslint: {
     config: {
-      stylistic: true
-    }
+      stylistic: true,
+    },
   },
   alias: {
-    'styled-system': resolve('./styled-system')
+    'styled-system': resolve('./styled-system'),
   },
- 
+
   css: [
     '@/assets/css/global.css',
   ],
- 
+
   postcss: {
     plugins: {
       '@pandacss/dev/postcss': {},
-    }
-  }
+    },
+  },
 })
