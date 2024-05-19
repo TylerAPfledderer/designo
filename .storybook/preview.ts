@@ -1,10 +1,9 @@
 import type { Preview } from '@storybook/vue3'
-import type {ViewportMap} from '@storybook/addon-viewport'
 import pandaPreset from '@pandacss/preset-panda'
 
-const defaultBreakpoints = pandaPreset.theme.breakpoints
-
 import '../assets/css/global.css'
+
+const defaultBreakpoints = pandaPreset.theme.breakpoints
 
 const preview: Preview = {
   parameters: {
@@ -24,14 +23,14 @@ const preview: Preview = {
             name: key,
             styles: {
               width: value,
-              height: "800px"
+              height: '800px',
             },
-          }
+          },
         }
-      }, {})
-    }
+      }, {}),
+    },
   },
-  
+
 }
 
 export default preview

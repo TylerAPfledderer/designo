@@ -22,25 +22,25 @@ export default defineConfig({
     extend: {
       'html, body': {
         fontFamily: 'body',
-        lineHeight: '1'
+        lineHeight: '1',
       },
       'h1, h2, h3': {
         fontWeight: 'medium',
       },
       'h1': {
-        lineHeight: {base: '1.5', md: '2'},
+        lineHeight: { base: '1.5', md: '2' },
         fontSize: { base: '1.95rem', md: '3.05rem' },
       },
-      h2: {
+      'h2': {
         lineHeight: '1.5',
         fontSize: { base: '1.56rem', md: '2.44rem' },
         letterSpacing: '2px',
       },
-      h3: {
+      'h3': {
         lineHeight: '1',
         fontSize: '1.25rem',
         letterSpacing: '5px',
-      }
+      },
     },
 
   },
@@ -77,9 +77,27 @@ export default defineConfig({
           2: { value: '52px' },
         },
       },
+      semanticTokens: {
+        colors: {
+          primary: {
+            DEFAULT: { value: '#E7816B' },
+            light: { value: '#FFAD9B' },
+          },
+          black: {
+            value: '#1D1C1E',
+          },
+          white: {
+            value: '#FFFFFF',
+          },
+          gray: {
+            dark: { value: '#333136' },
+            light: { value: '#F1F3F5' },
+          },
+        },
+      },
     },
   },
-  
+
   // The output directory for your css system
   outdir: 'styled-system',
 })

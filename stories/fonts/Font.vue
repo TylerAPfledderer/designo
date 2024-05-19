@@ -3,7 +3,7 @@ import { flex } from 'styled-system/patterns'
 </script>
 
 <template>
-  <div :class="flex({direction: 'column', gap: '1'})">
+  <div :class="flex({ direction: 'column', gap: '1' })">
     <h1>
       H1 Graphic Design
     </h1>
