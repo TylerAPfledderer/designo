@@ -40,9 +40,13 @@ export default defineConfig({
       "html, body": {
         fontFamily: "body",
         lineHeight: "1",
+        color: "gray.dark",
       },
       "h1, h2, h3": {
         fontWeight: "medium",
+      },
+      "h1, h2": {
+        color: "black",
       },
       h1: {
         lineHeight: { base: "1.5", md: "2" },
