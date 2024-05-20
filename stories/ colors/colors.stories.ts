@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from '@storybook-vue/nuxt'
-import ColorsComponent from './Colors.vue'
+import type { Meta, StoryObj } from "@storybook-vue/nuxt";
+import ColorsComponent from "./Colors.vue";
 
 const meta = {
-  title: 'Colors',
+  title: "Colors",
   component: ColorsComponent,
-} satisfies Meta<typeof ColorsComponent>
+} satisfies Meta<typeof ColorsComponent>;
 
-export default meta
+export default meta;
 
-export const Colors: StoryObj<typeof meta> = {}
+export const Colors: StoryObj<typeof meta> = {};

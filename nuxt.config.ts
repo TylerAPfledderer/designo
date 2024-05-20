@@ -1,6 +1,6 @@
-import { createResolver } from '@nuxt/kit'
+import { createResolver } from "@nuxt/kit";
 
-const { resolve } = createResolver(import.meta.url)
+const { resolve } = createResolver(import.meta.url);
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -10,24 +10,22 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
 
-  modules: ['@nuxt/eslint', '@nuxtjs/storybook'],
+  modules: ["@nuxt/eslint", "@nuxtjs/storybook"],
 
   eslint: {
     config: {
-      stylistic: true,
+      typescript: true,
     },
   },
   alias: {
-    'styled-system': resolve('./styled-system'),
+    "styled-system": resolve("./styled-system"),
   },
 
-  css: [
-    '@/assets/css/global.css',
-  ],
+  css: ["@/assets/css/global.css"],
 
   postcss: {
     plugins: {
-      '@pandacss/dev/postcss': {},
+      "@pandacss/dev/postcss": {},
     },
   },
-})
+});
