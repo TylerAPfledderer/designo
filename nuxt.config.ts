@@ -12,6 +12,8 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/eslint", "@nuxtjs/storybook"],
 
+  components: ["~/components/design-system", "~/components"],
+
   eslint: {
     config: {
       typescript: true,

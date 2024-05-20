@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook-vue/nuxt";
-import ColorsComponent from "./Colors.vue";
+import { Colors as ColorsComponent } from "#components";
 
 const meta = {
   title: "Colors",
