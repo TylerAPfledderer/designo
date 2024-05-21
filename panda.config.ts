@@ -13,6 +13,7 @@ const {
   easings,
   durations,
   borders,
+  spacing,
   ...pandaPresetRest
 } = pandaPreset.theme.tokens;
 
@@ -27,7 +28,6 @@ export default defineConfig({
     "./app.vue",
     "./components/**/*.{js,jsx,ts,tsx,vue}",
     "./pages/**/*.{js,jsx,ts,tsx,vue}",
-    "./stories/**/*.{js,jsx,ts,tsx,vue}",
   ],
 
   // Files to exclude
@@ -65,6 +65,10 @@ export default defineConfig({
     },
   },
 
+  staticCss: {
+    recipes: "*",
+  },
+
   // Useful for theme customization
   theme: {
     extend: {
@@ -93,8 +97,9 @@ export default defineConfig({
           2: { value: "52px" },
         },
         spacing: {
-          1: { value: "26px" },
-          2: { value: "52px" },
+          ...spacing,
+          "ms-1": { value: "26px" },
+          "ms-2": { value: "52px" },
         },
       },
       semanticTokens: {
@@ -112,6 +117,43 @@ export default defineConfig({
           gray: {
             dark: { value: "#333136" },
             light: { value: "#F1F3F5" },
+          },
+        },
+      },
+      recipes: {
+        button: {
+          className: "button",
+          description: "A button component",
+          base: {
+            textTransform: "uppercase",
+            borderRadius: "lg",
+            fontWeight: "medium",
+            paddingBlock: "3",
+            paddingInline: "6",
+            cursor: "pointer",
+          },
+          variants: {
+            visual: {
+              light: {
+                backgroundColor: "white",
+                // ! This really should be in the `base` option
+                _hover: {
+                  backgroundColor: "primary.light",
+                  color: "white",
+                },
+              },
+              dark: {
+                backgroundColor: "primary",
+                color: "white",
+                // ! This really should be in the `base` option
+                _hover: {
+                  backgroundColor: "primary.light",
+                },
+              },
+            },
+          },
+          defaultVariants: {
+            visual: "light",
           },
         },
       },
