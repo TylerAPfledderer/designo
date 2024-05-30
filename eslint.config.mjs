@@ -8,4 +8,10 @@ export default withNuxt(
       "vue/multi-word-component-names": "off",
     },
   },
+  {
+    files: ["global.d.ts"],
+    rules: {
+      "@typescript-eslint/no-unused-vars": "off",
+    },
+  },
 );

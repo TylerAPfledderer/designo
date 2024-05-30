@@ -62,6 +62,18 @@ export default defineConfig({
         fontSize: "1.25rem",
         letterSpacing: "5px",
       },
+      "input, textarea": {
+        color: "white",
+        borderBottomWidth: "3px",
+        borderBottomColor: "white",
+        paddingBottom: "3",
+        paddingInlineStart: "4",
+        lineHeight: "1",
+        _placeholderShown: {
+          borderBottomWidth: "1px",
+          borderBottomColor: "white/50",
+        },
+      },
     },
   },
 
@@ -79,6 +91,7 @@ export default defineConfig({
           body: { value: "var(--fonts-jost)" },
         },
         fontSizes: {
+          sm: { value: "0.8rem" },
           base: { value: "1rem" },
           lg: { value: "1.25rem" },
           xl: { value: "1.56rem" },
