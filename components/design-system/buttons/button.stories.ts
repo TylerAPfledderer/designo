@@ -4,8 +4,6 @@ import { css, cx } from "styled-system/css";
 import { token } from "styled-system/tokens";
 import { vstack, center } from "styled-system/patterns";
 
-console.log(import.meta.env.STORYBOOK);
-
 const meta = {
   title: "Buttons",
   component: Button,

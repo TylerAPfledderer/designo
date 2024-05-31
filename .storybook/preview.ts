@@ -16,19 +16,30 @@ const preview: Preview = {
       },
     },
     viewport: {
-      viewports: Object.entries(defaultBreakpoints).reduce((arr, curr) => {
-        const [key, value] = curr;
-        return {
-          ...arr,
-          [key]: {
-            name: key,
+      viewports: Object.entries(defaultBreakpoints).reduce(
+        (arr, curr) => {
+          const [key, value] = curr;
+          return {
+            ...arr,
+            [key]: {
+              name: key,
+              styles: {
+                width: value,
+                height: "800px",
+              },
+            },
+          };
+        },
+        {
+          base: {
+            name: "base",
             styles: {
-              width: value,
+              width: "375px",
               height: "800px",
             },
           },
-        };
-      }, {}),
+        },
+      ),
     },
   },
 };

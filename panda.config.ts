@@ -7,13 +7,14 @@ const {
   colors,
   fontWeights,
   letterSpacings,
-  animations,
   blurs,
   shadows,
-  easings,
-  durations,
   borders,
   spacing,
+  animations,
+  durations,
+  easings,
+  aspectRatios,
   ...pandaPresetRest
 } = pandaPreset.theme.tokens;
 

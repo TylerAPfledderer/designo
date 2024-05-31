@@ -1,4 +1,5 @@
 import { createResolver } from "@nuxt/kit";
+import svgLoader from "vite-svg-loader";
 
 const { resolve } = createResolver(import.meta.url);
 
@@ -10,7 +11,7 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
 
-  modules: ["@nuxt/eslint", "@nuxtjs/storybook"],
+  modules: ["@nuxt/eslint", "@nuxtjs/storybook", "@vueuse/nuxt"],
 
   components: ["~/components/design-system", "~/components"],
 
@@ -29,5 +30,9 @@ export default defineNuxtConfig({
     plugins: {
       "@pandacss/dev/postcss": {},
     },
+  },
+
+  vite: {
+    plugins: [svgLoader()],
   },
 });
