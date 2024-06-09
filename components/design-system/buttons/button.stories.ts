@@ -1,17 +1,17 @@
 import type { Meta, StoryObj } from "@storybook-vue/nuxt";
 import { Button } from "#components";
-import { css, cx } from "styled-system/css";
-import { token } from "styled-system/tokens";
-import { vstack, center } from "styled-system/patterns";
+import { css, cx } from "~/styled-system/css";
+import { token } from "~/styled-system/tokens";
+import { vstack, center } from "~/styled-system/patterns";
 
 const meta = {
-  title: "Buttons",
+  title: "Design System / Buttons",
   component: Button,
-} satisfies Meta;
+} satisfies Meta<typeof Button>;
 
 export default meta;
 
-export const Buttons: StoryObj = {
+export const Buttons: StoryObj<typeof meta> = {
   parameters: {
     pseudo: {
       hover: ["#light", "#dark"],

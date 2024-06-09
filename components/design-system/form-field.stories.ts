@@ -1,10 +1,10 @@
 import { FormField } from "#components";
 import type { Meta, StoryObj } from "@storybook-vue/nuxt";
-import { center } from "styled-system/patterns";
+import { center } from "~/styled-system/patterns";
 import { css } from "~/styled-system/css";
 
 const meta = {
-  title: "Field",
+  title: "Components / Field",
   decorators: [
     () => ({
       setup() {

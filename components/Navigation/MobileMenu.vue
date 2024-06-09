@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { css } from "styled-system/css";
-import { flex, hstack } from "styled-system/patterns";
+import { css } from "~/styled-system/css";
+import { flex, hstack } from "~/styled-system/patterns";
 import CloseIcon from "assets/icons/icon-close.svg?component";
 import HamburgerIcon from "assets/icons/icon-hamburger.svg?component";
 

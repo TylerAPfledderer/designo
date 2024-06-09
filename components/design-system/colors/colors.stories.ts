@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook-vue/nuxt";
 import { Colors as ColorsComponent } from "#components";
 
 const meta = {
-  title: "Colors",
+  title: "Design System / Colors",
   component: ColorsComponent,
 } satisfies Meta<typeof ColorsComponent>;
 

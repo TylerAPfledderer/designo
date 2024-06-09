@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { css } from "styled-system/css";
-import { hstack } from "styled-system/patterns";
+import { css } from "~/styled-system/css";
+import { hstack } from "~/styled-system/patterns";
 
-import { NavigationMobileMenu } from "#components";
+import { MobileMenu } from "#components";
 
 const navBarRef = ref<HTMLElement | null>(null);
 
@@ -27,7 +27,7 @@ onMounted(() => {
     <div :class="css({ w: '202px' })">
       <img alt="" src="~/assets/images/logo-dark.png" />
     </div>
-    <NavigationMobileMenu
+    <MobileMenu
       v-if="isSmaller('md')"
       :nav-bar-ref="navBarRef"
       :nav-link-list="navLinkList"

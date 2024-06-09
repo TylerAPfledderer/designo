@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { ColorToken } from "styled-system/tokens";
-import { grid, square, vstack } from "styled-system/patterns";
-import { token } from "styled-system/tokens";
+import type { ColorToken } from "~/styled-system/tokens";
+import { grid, square, vstack } from "~/styled-system/patterns";
+import { token } from "~/styled-system/tokens";
 
 const palleteData: { name: string; value: ColorToken }[] = [
   { name: "Primary", value: "primary" },

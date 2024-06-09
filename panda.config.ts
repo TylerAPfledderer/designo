@@ -42,12 +42,10 @@ export default defineConfig({
         fontFamily: "body",
         lineHeight: "1",
         color: "gray.dark",
+        textWrap: "balance",
       },
       "h1, h2, h3": {
         fontWeight: "medium",
-      },
-      "h1, h2": {
-        color: "black",
       },
       h1: {
         lineHeight: { base: "1.5", md: "2" },
@@ -137,7 +135,6 @@ export default defineConfig({
       recipes: {
         button: {
           className: "button",
-          description: "A button component",
           base: {
             textTransform: "uppercase",
             borderRadius: "lg",
@@ -150,6 +147,7 @@ export default defineConfig({
             visual: {
               light: {
                 backgroundColor: "white",
+                color: "gray.dark",
                 // ! This really should be in the `base` option
                 _hover: {
                   backgroundColor: "primary.light",

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook-vue/nuxt";
 import FontComponent from "./Font.vue";
 
 const meta = {
-  title: "Font",
+  title: "Design System / Font",
   component: FontComponent,
 } satisfies Meta<typeof FontComponent>;
 

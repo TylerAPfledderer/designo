@@ -1,4 +1,4 @@
-import type { Preview } from "@storybook/vue3";
+import type { Preview } from "@storybook-vue/nuxt";
 import pandaPreset from "@pandacss/preset-panda";
 
 import "../assets/css/global.css";

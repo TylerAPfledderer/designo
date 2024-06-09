@@ -1,7 +1,4 @@
-import { createResolver } from "@nuxt/kit";
 import svgLoader from "vite-svg-loader";
-
-const { resolve } = createResolver(import.meta.url);
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -13,15 +10,15 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/eslint", "@nuxtjs/storybook", "@vueuse/nuxt"],
 
-  components: ["~/components/design-system", "~/components"],
+  components: [
+    "~/components/design-system",
+    { path: "~/components", pathPrefix: false },
+  ],
 
   eslint: {
     config: {
       typescript: true,
     },
-  },
-  alias: {
-    "styled-system": resolve("./styled-system"),
   },
 
   css: ["@/assets/css/global.css"],

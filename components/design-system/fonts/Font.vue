@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { flex } from "styled-system/patterns";
+import { flex } from "~/styled-system/patterns";
 </script>
 
 <template>
