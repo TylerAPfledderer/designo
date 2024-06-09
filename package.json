@@ -30,6 +30,7 @@
     "@nuxt/eslint": "^0.3.13",
     "@nuxtjs/storybook": "7.0.2",
     "@pandacss/dev": "^0.39.1",
+    "@pandacss/eslint-plugin": "^0.1.5",
     "@pandacss/studio": "^0.39.1",
     "@storybook-vue/nuxt": "0.2.6",
     "@storybook/addon-essentials": "8.0.8",

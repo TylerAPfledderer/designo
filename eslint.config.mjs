@@ -14,4 +14,9 @@ export default withNuxt(
       "@typescript-eslint/no-unused-vars": "off",
     },
   },
+  {
+    plugins: {
+      "@pandacss": {},
+    },
+  },
 );
